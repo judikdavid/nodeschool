@@ -1,21 +1,11 @@
-module.exports = function (dir, extension, callback) {
+var filteredls = require('./modulefilteredls');
 
-  var fs = require('fs'),
-      path = require('path'),
-      filelist = [];
+filteredls(process.argv[2], process.argv[3], function(err, list){
+  if (err) {
+    return console.error('err: ', err);
+  }
 
-  fs.readdir(dir, function (err, list) {
-      if (err) {
-        return callback(err);
-      }
-
-      list.forEach(function(file) {
-        if (path.extname(file) === '.' + extension) {
-          filelist.push(file);
-        }
-      });
-
-      return callback(null, filelist);
+  list.forEach(function(dirname) {
+    console.log(dirname);
   });
-
-};
+});
