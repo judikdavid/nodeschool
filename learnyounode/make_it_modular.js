@@ -1,4 +1,4 @@
-var filteredls = require('./filtered_ls.js ');
+var filteredls = require('./module_ls.js');
 
 filteredls(process.argv[2], process.argv[3], function(err, list){
   if (err) {
