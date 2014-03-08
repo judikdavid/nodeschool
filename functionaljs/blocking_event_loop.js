@@ -6,7 +6,9 @@ function repeat(operation, num) {
   operation();
             
   if (num % 100 === 0) {
-    setTimeout(repeat.bind(this, operation, num--), 1);
+    setTimeout(function() {
+      repeat(operation, num--);
+    });
   }
   else {
     repeat(operation, num--);
