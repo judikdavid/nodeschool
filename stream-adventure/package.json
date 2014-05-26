@@ -4,6 +4,8 @@
   "description": "",
   "main": "01_beep_boop.js",
   "dependencies": {
+    "concat-stream": "^1.4.5",
+    "split": "^0.3.0",
     "through": "^2.3.4"
   },
   "devDependencies": {},
