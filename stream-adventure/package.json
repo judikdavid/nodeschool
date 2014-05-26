@@ -7,7 +7,9 @@
     "concat-stream": "^1.4.5",
     "request": "^2.36.0",
     "split": "^0.3.0",
-    "through": "^2.3.4"
+    "through": "^2.3.4",
+    "trumpet": "^1.6.3",
+    "websocket-stream": "^0.5.1"
   },
   "devDependencies": {},
   "scripts": {
