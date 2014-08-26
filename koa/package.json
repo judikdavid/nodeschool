@@ -1,0 +1,19 @@
+{
+  "name": "kick-of-koa",
+  "version": "0.0.0",
+  "description": "kick of koa nodeschool",
+  "main": "01_hello_koa.js",
+  "dependencies": {
+    "koa": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa",
+    "nodeschool"
+  ],
+  "author": "David Judik",
+  "license": "ISC"
+}
